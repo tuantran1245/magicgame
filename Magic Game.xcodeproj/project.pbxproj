@@ -1,0 +1,1413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE07B8D41EA4C91E00966FAB /* Level5_Intro.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE07B8D31EA4C91E00966FAB /* Level5_Intro.sks */; };
+		DE07B8D61EA4C96F00966FAB /* Level5_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07B8D51EA4C96F00966FAB /* Level5_Intro.swift */; };
+		DE08DE171EC8552B00F64A06 /* RacingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08DE161EC8552B00F64A06 /* RacingScene.swift */; };
+		DE08DE1E1EC85E3400F64A06 /* Level6_Intro.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE08DE1C1EC85E3400F64A06 /* Level6_Intro.sks */; };
+		DE08DE1F1EC85E3400F64A06 /* Level6_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08DE1D1EC85E3400F64A06 /* Level6_Intro.swift */; };
+		DE08DE211EC87A5200F64A06 /* Level6_Intro.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE08DE201EC87A5200F64A06 /* Level6_Intro.atlas */; };
+		DE09EFD01E94D51600BF99AE /* Supporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE09EFCF1E94D51600BF99AE /* Supporter.swift */; };
+		DE0AE62C1F5640E2009CAD58 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE5FD1F5640E2009CAD58 /* click.wav */; };
+		DE0AE62D1F5640E2009CAD58 /* click1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE5FE1F5640E2009CAD58 /* click1.wav */; };
+		DE0AE62E1F5640E2009CAD58 /* victory.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6011F5640E2009CAD58 /* victory.wav */; };
+		DE0AE62F1F5640E2009CAD58 /* enemy_attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6021F5640E2009CAD58 /* enemy_attack.wav */; };
+		DE0AE6301F5640E2009CAD58 /* enemy_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6031F5640E2009CAD58 /* enemy_die.wav */; };
+		DE0AE6311F5640E2009CAD58 /* level_menu_background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6041F5640E2009CAD58 /* level_menu_background.mp3 */; };
+		DE0AE6321F5640E2009CAD58 /* main_menu_background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6061F5640E2009CAD58 /* main_menu_background.mp3 */; };
+		DE0AE6331F5640E2009CAD58 /* Intro_tutorial_background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6081F5640E2009CAD58 /* Intro_tutorial_background.mp3 */; };
+		DE0AE6341F5640E2009CAD58 /* Level5_Background.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6091F5640E2009CAD58 /* Level5_Background.wav */; };
+		DE0AE6351F5640E2009CAD58 /* level_done.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE60A1F5640E2009CAD58 /* level_done.wav */; };
+		DE0AE6361F5640E2009CAD58 /* main_background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE60B1F5640E2009CAD58 /* main_background.mp3 */; };
+		DE0AE6371F5640E2009CAD58 /* boss_attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE60D1F5640E2009CAD58 /* boss_attack.wav */; };
+		DE0AE6381F5640E2009CAD58 /* BossLv1_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE60E1F5640E2009CAD58 /* BossLv1_die.wav */; };
+		DE0AE6391F5640E2009CAD58 /* BossLv2_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE60F1F5640E2009CAD58 /* BossLv2_die.wav */; };
+		DE0AE63A1F5640E2009CAD58 /* BossLv3_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6101F5640E2009CAD58 /* BossLv3_die.wav */; };
+		DE0AE63B1F5640E2009CAD58 /* BossLv4_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6111F5640E2009CAD58 /* BossLv4_die.wav */; };
+		DE0AE63C1F5640E2009CAD58 /* BossLv5_attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6121F5640E2009CAD58 /* BossLv5_attack.wav */; };
+		DE0AE63D1F5640E2009CAD58 /* BossLv5_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6131F5640E2009CAD58 /* BossLv5_die.wav */; };
+		DE0AE63E1F5640E2009CAD58 /* BossLv5_laugh.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6141F5640E2009CAD58 /* BossLv5_laugh.wav */; };
+		DE0AE63F1F5640E2009CAD58 /* ghost_attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6151F5640E2009CAD58 /* ghost_attack.wav */; };
+		DE0AE6401F5640E2009CAD58 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6161F5640E2009CAD58 /* heart.wav */; };
+		DE0AE6411F5640E2009CAD58 /* lighting.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6171F5640E2009CAD58 /* lighting.wav */; };
+		DE0AE6421F5640E2009CAD58 /* one_enemy_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6181F5640E2009CAD58 /* one_enemy_die.wav */; };
+		DE0AE6441F5640E2009CAD58 /* boss_reading.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE61B1F5640E2009CAD58 /* boss_reading.mp3 */; };
+		DE0AE6451F5640E2009CAD58 /* cat_flying_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE61C1F5640E2009CAD58 /* cat_flying_up.mp3 */; };
+		DE0AE6461F5640E2009CAD58 /* level1_intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE61D1F5640E2009CAD58 /* level1_intro.mp3 */; };
+		DE0AE6471F5640E2009CAD58 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE61E1F5640E2009CAD58 /* music.m4a */; };
+		DE0AE6481F5640E2009CAD58 /* Music_victory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE61F1F5640E2009CAD58 /* Music_victory.mp3 */; };
+		DE0AE6491F5640E2009CAD58 /* Player_walk.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6211F5640E2009CAD58 /* Player_walk.wav */; };
+		DE0AE64A1F5640E2009CAD58 /* Player_win.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6221F5640E2009CAD58 /* Player_win.wav */; };
+		DE0AE64B1F5640E2009CAD58 /* spellDown.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6231F5640E2009CAD58 /* spellDown.wav */; };
+		DE0AE64C1F5640E2009CAD58 /* spellDownArrow.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6241F5640E2009CAD58 /* spellDownArrow.wav */; };
+		DE0AE64D1F5640E2009CAD58 /* spellHealing.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6251F5640E2009CAD58 /* spellHealing.wav */; };
+		DE0AE64E1F5640E2009CAD58 /* spellLeftArrow.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6261F5640E2009CAD58 /* spellLeftArrow.wav */; };
+		DE0AE64F1F5640E2009CAD58 /* spellRight.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6271F5640E2009CAD58 /* spellRight.wav */; };
+		DE0AE6501F5640E2009CAD58 /* spellUpArrow.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE6281F5640E2009CAD58 /* spellUpArrow.wav */; };
+		DE0AE6511F5640E2009CAD58 /* Background_old.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE62A1F5640E2009CAD58 /* Background_old.mp3 */; };
+		DE0AE6521F5640E2009CAD58 /* Racing_Background.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE0AE62B1F5640E2009CAD58 /* Racing_Background.m4a */; };
+		DE0D9FE31E8E83230010B598 /* Gesture.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE0D9FE21E8E83230010B598 /* Gesture.atlas */; };
+		DE10B1D11E98EA5F00BB1137 /* lv5_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1C71E98EA5F00BB1137 /* lv5_w1.sks */; };
+		DE10B1D21E98EA5F00BB1137 /* lv5_w10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1C81E98EA5F00BB1137 /* lv5_w10.sks */; };
+		DE10B1D31E98EA5F00BB1137 /* lv5_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1C91E98EA5F00BB1137 /* lv5_w2.sks */; };
+		DE10B1D51E98EA5F00BB1137 /* lv5_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1CB1E98EA5F00BB1137 /* lv5_w4.sks */; };
+		DE10B1D61E98EA5F00BB1137 /* lv5_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1CC1E98EA5F00BB1137 /* lv5_w5.sks */; };
+		DE10B1D71E98EA5F00BB1137 /* lv5_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1CD1E98EA5F00BB1137 /* lv5_w6.sks */; };
+		DE10B1D81E98EA5F00BB1137 /* lv5_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1CE1E98EA5F00BB1137 /* lv5_w7.sks */; };
+		DE10B1D91E98EA5F00BB1137 /* lv5_w8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1CF1E98EA5F00BB1137 /* lv5_w8.sks */; };
+		DE10B1DA1E98EA5F00BB1137 /* lv5_w9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1D01E98EA5F00BB1137 /* lv5_w9.sks */; };
+		DE10B1DE1E98EED200BB1137 /* BossLv5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE10B1DD1E98EED200BB1137 /* BossLv5.swift */; };
+		DE10B1E01E99000000BB1137 /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE10B1DF1E98FFFF00BB1137 /* SpecialEffects.swift */; };
+		DE10B1FB1E99DD1100BB1137 /* Special_Effects.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE10B1FA1E99DD1100BB1137 /* Special_Effects.atlas */; };
+		DE11265B1E5C92AF009B4D4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11265A1E5C92AF009B4D4E /* AppDelegate.swift */; };
+		DE1126611E5C92AF009B4D4E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1126601E5C92AF009B4D4E /* GameScene.swift */; };
+		DE1126631E5C92AF009B4D4E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1126621E5C92AF009B4D4E /* GameViewController.swift */; };
+		DE1126661E5C92AF009B4D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1126641E5C92AF009B4D4E /* Main.storyboard */; };
+		DE1126681E5C92AF009B4D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1126671E5C92AF009B4D4E /* Assets.xcassets */; };
+		DE11266B1E5C92AF009B4D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1126691E5C92AF009B4D4E /* LaunchScreen.storyboard */; };
+		DE1126781E5C9523009B4D4E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1126761E5C9523009B4D4E /* Player.swift */; };
+		DE1126791E5C9523009B4D4E /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1126771E5C9523009B4D4E /* Zombie.swift */; };
+		DE11267B1E5C9563009B4D4E /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11267A1E5C9563009B4D4E /* Boss.swift */; };
+		DE11267E1E5C97BE009B4D4E /* DBPathRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11267C1E5C97BE009B4D4E /* DBPathRecognizer.swift */; };
+		DE11267F1E5C97BF009B4D4E /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11267D1E5C97BE009B4D4E /* RenderView.swift */; };
+		DE12E39E1E76976B006DC59B /* BossLv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12E39D1E76976B006DC59B /* BossLv2.swift */; };
+		DE12E3A01E76D051006DC59B /* BossLv2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE12E39F1E76D051006DC59B /* BossLv2.atlas */; };
+		DE138D6F1E686F4F007E3CE8 /* EncounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE138D6E1E686F4F007E3CE8 /* EncounterManager.swift */; };
+		DE140B0E1EC0DD3E00B99AF0 /* Zombie_3.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE140B0D1EC0DD3E00B99AF0 /* Zombie_3.atlas */; };
+		DE15B0681E83D4C4000BF46A /* hud.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE15B0671E83D4C4000BF46A /* hud.atlas */; };
+		DE1822621ECC5D3F00E2D020 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1822611ECC5D3F00E2D020 /* CoreMotion.framework */; };
+		DE1AE8431E632E2E0069960B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AE8421E632E2E0069960B /* HUD.swift */; };
+		DE1EDB291ED48C38009DBADA /* Tiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE1EDB281ED48C38009DBADA /* Tiles.sks */; };
+		DE1EDB2B1ED48C6F009DBADA /* Object.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE1EDB2A1ED48C6F009DBADA /* Object.atlas */; };
+		DE1EDB2D1ED48CD8009DBADA /* RacingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE1EDB2C1ED48CD7009DBADA /* RacingScene.sks */; };
+		DE2BE8611E66D9DE008C2F1E /* enemies.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE2BE8601E66D9DE008C2F1E /* enemies.atlas */; };
+		DE2D90541F68DE05003C20CC /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D90531F68DE05003C20CC /* Archer.swift */; };
+		DE2D90561F68DE15003C20CC /* Witcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D90551F68DE15003C20CC /* Witcher.swift */; };
+		DE2D90581F68DE3E003C20CC /* Swordsman.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D90571F68DE3E003C20CC /* Swordsman.swift */; };
+		DE2D905A1F68E56A003C20CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2D90591F68E56A003C20CC /* Assets.xcassets */; };
+		DE2DEDF51F3C532C00773BAC /* TNTExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE2DEDF31F3C532C00773BAC /* TNTExplosion.sks */; };
+		DE33205A1F6BA28200B82FF6 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3320591F6BA28200B82FF6 /* Arrow.swift */; };
+		DE3320671F6BA83800B82FF6 /* lv8_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE33205C1F6BA83800B82FF6 /* lv8_w1.sks */; };
+		DE3320681F6BA83800B82FF6 /* lv8_w10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE33205D1F6BA83800B82FF6 /* lv8_w10.sks */; };
+		DE3320691F6BA83800B82FF6 /* lv8_w11.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE33205E1F6BA83800B82FF6 /* lv8_w11.sks */; };
+		DE33206A1F6BA83800B82FF6 /* lv8_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE33205F1F6BA83800B82FF6 /* lv8_w2.sks */; };
+		DE33206B1F6BA83800B82FF6 /* lv8_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE3320601F6BA83800B82FF6 /* lv8_w3.sks */; };
+		DE33206C1F6BA83800B82FF6 /* lv8_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE3320611F6BA83800B82FF6 /* lv8_w4.sks */; };
+		DE33206D1F6BA83800B82FF6 /* lv8_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE3320621F6BA83800B82FF6 /* lv8_w5.sks */; };
+		DE33206E1F6BA83800B82FF6 /* lv8_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE3320631F6BA83800B82FF6 /* lv8_w6.sks */; };
+		DE33206F1F6BA83800B82FF6 /* lv8_w8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE3320641F6BA83800B82FF6 /* lv8_w8.sks */; };
+		DE3320701F6BA83800B82FF6 /* lv8_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE3320651F6BA83800B82FF6 /* lv8_w7.sks */; };
+		DE3320711F6BA83800B82FF6 /* lv8_w9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE3320661F6BA83800B82FF6 /* lv8_w9.sks */; };
+		DE3A316E1F936A1F0013CD84 /* Sprikeman.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A316D1F936A1F0013CD84 /* Sprikeman.swift */; };
+		DE4375471EB08C6D008BBFDC /* Level1_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4375461EB08C6D008BBFDC /* Level1_Intro.swift */; };
+		DE52B7AB1E66AC7D008FECDA /* Player.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE52B7AA1E66AC7D008FECDA /* Player.atlas */; };
+		DE5BE7671E79270600A30223 /* lv3_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE75D1E79270600A30223 /* lv3_w1.sks */; };
+		DE5BE7681E79270600A30223 /* lv3_w10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE75E1E79270600A30223 /* lv3_w10.sks */; };
+		DE5BE7691E79270600A30223 /* lv3_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE75F1E79270600A30223 /* lv3_w2.sks */; };
+		DE5BE76A1E79270600A30223 /* lv3_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7601E79270600A30223 /* lv3_w3.sks */; };
+		DE5BE76B1E79270600A30223 /* lv3_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7611E79270600A30223 /* lv3_w4.sks */; };
+		DE5BE76C1E79270600A30223 /* lv3_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7621E79270600A30223 /* lv3_w5.sks */; };
+		DE5BE76D1E79270600A30223 /* lv3_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7631E79270600A30223 /* lv3_w6.sks */; };
+		DE5BE76E1E79270600A30223 /* lv3_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7641E79270600A30223 /* lv3_w7.sks */; };
+		DE5BE76F1E79270600A30223 /* lv3_w8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7651E79270600A30223 /* lv3_w8.sks */; };
+		DE5BE7701E79270600A30223 /* lv3_w9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7661E79270600A30223 /* lv3_w9.sks */; };
+		DE5BE7861E792AAE00A30223 /* lv1_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7721E792AAE00A30223 /* lv1_w1.sks */; };
+		DE5BE7871E792AAE00A30223 /* lv1_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7731E792AAE00A30223 /* lv1_w2.sks */; };
+		DE5BE7881E792AAE00A30223 /* lv1_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7741E792AAE00A30223 /* lv1_w3.sks */; };
+		DE5BE7891E792AAE00A30223 /* lv1_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7751E792AAE00A30223 /* lv1_w4.sks */; };
+		DE5BE78A1E792AAE00A30223 /* lv1_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7761E792AAE00A30223 /* lv1_w5.sks */; };
+		DE5BE78B1E792AAE00A30223 /* lv1_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7771E792AAE00A30223 /* lv1_w6.sks */; };
+		DE5BE78C1E792AAE00A30223 /* lv1_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7781E792AAE00A30223 /* lv1_w7.sks */; };
+		DE5BE78D1E792AAE00A30223 /* lv1_w8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7791E792AAE00A30223 /* lv1_w8.sks */; };
+		DE5BE78E1E792AAE00A30223 /* lv1_w9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE77A1E792AAE00A30223 /* lv1_w9.sks */; };
+		DE5BE78F1E792AAE00A30223 /* lv2_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE77C1E792AAE00A30223 /* lv2_w1.sks */; };
+		DE5BE7901E792AAE00A30223 /* lv2_w10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE77D1E792AAE00A30223 /* lv2_w10.sks */; };
+		DE5BE7911E792AAE00A30223 /* lv2_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE77E1E792AAE00A30223 /* lv2_w2.sks */; };
+		DE5BE7921E792AAE00A30223 /* lv2_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE77F1E792AAE00A30223 /* lv2_w3.sks */; };
+		DE5BE7931E792AAE00A30223 /* lv2_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7801E792AAE00A30223 /* lv2_w4.sks */; };
+		DE5BE7941E792AAE00A30223 /* lv2_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7811E792AAE00A30223 /* lv2_w5.sks */; };
+		DE5BE7951E792AAE00A30223 /* lv2_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7821E792AAE00A30223 /* lv2_w6.sks */; };
+		DE5BE7961E792AAE00A30223 /* lv2_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7831E792AAE00A30223 /* lv2_w7.sks */; };
+		DE5BE7971E792AAE00A30223 /* lv2_w8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7841E792AAE00A30223 /* lv2_w8.sks */; };
+		DE5BE7981E792AAE00A30223 /* lv2_w9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5BE7851E792AAE00A30223 /* lv2_w9.sks */; };
+		DE5BE79A1E7A29F700A30223 /* BossLv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BE7991E7A29F700A30223 /* BossLv3.swift */; };
+		DE6318691F4C160300A5F64D /* Ork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6318681F4C160300A5F64D /* Ork.swift */; };
+		DE6318751F4C6EFB00A5F64D /* CreepProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6318741F4C6EFB00A5F64D /* CreepProtocol.swift */; };
+		DE6318771F4E58C400A5F64D /* Ork_Captain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6318761F4E58C300A5F64D /* Ork_Captain.swift */; };
+		DE63187B1F514F0900A5F64D /* MiniBoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63187A1F514F0900A5F64D /* MiniBoss.swift */; };
+		DE63187D1F51786100A5F64D /* BossLv7.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63187C1F51786100A5F64D /* BossLv7.swift */; };
+		DE65423B1E6EC1D4008C04C1 /* LevelMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65423A1E6EC1D4008C04C1 /* LevelMenu.swift */; };
+		DE65423D1E6FA6CD008C04C1 /* BossLv1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65423C1E6FA6CD008C04C1 /* BossLv1.swift */; };
+		DE65423F1E700F25008C04C1 /* BossLv1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE65423E1E700F25008C04C1 /* BossLv1.atlas */; };
+		DE6947251EF7C8FC00936B7F /* RacingScene.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE6947241EF7C8FC00936B7F /* RacingScene.atlas */; };
+		DE6AE71E1E7C1474007559E4 /* BossLv3.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE71D1E7C1473007559E4 /* BossLv3.atlas */; };
+		DE6AE72A1E7C1523007559E4 /* lv4_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7201E7C1523007559E4 /* lv4_w1.sks */; };
+		DE6AE72C1E7C1523007559E4 /* lv4_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7221E7C1523007559E4 /* lv4_w2.sks */; };
+		DE6AE72D1E7C1523007559E4 /* lv4_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7231E7C1523007559E4 /* lv4_w3.sks */; };
+		DE6AE72E1E7C1523007559E4 /* lv4_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7241E7C1523007559E4 /* lv4_w4.sks */; };
+		DE6AE72F1E7C1523007559E4 /* lv4_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7251E7C1523007559E4 /* lv4_w5.sks */; };
+		DE6AE7301E7C1523007559E4 /* lv4_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7261E7C1523007559E4 /* lv4_w6.sks */; };
+		DE6AE7311E7C1523007559E4 /* lv4_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7271E7C1523007559E4 /* lv4_w7.sks */; };
+		DE6AE7351E7C1CD5007559E4 /* lv1_w10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6AE7341E7C1CD5007559E4 /* lv1_w10.sks */; };
+		DE7497891F8C6855004EBBED /* BossLv8.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7497881F8C6855004EBBED /* BossLv8.swift */; };
+		DE8111CB1F650515001AE254 /* lv7_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C11F650515001AE254 /* lv7_w1.sks */; };
+		DE8111CC1F650515001AE254 /* lv7_w10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C21F650515001AE254 /* lv7_w10.sks */; };
+		DE8111CD1F650515001AE254 /* lv7_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C31F650515001AE254 /* lv7_w2.sks */; };
+		DE8111CE1F650515001AE254 /* lv7_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C41F650515001AE254 /* lv7_w3.sks */; };
+		DE8111CF1F650515001AE254 /* lv7_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C51F650515001AE254 /* lv7_w4.sks */; };
+		DE8111D01F650515001AE254 /* lv7_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C61F650515001AE254 /* lv7_w5.sks */; };
+		DE8111D11F650515001AE254 /* lv7_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C71F650515001AE254 /* lv7_w6.sks */; };
+		DE8111D21F650515001AE254 /* lv7_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C81F650515001AE254 /* lv7_w7.sks */; };
+		DE8111D31F650515001AE254 /* lv7_w8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111C91F650515001AE254 /* lv7_w8.sks */; };
+		DE8111D41F650515001AE254 /* lv7_w9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8111CA1F650515001AE254 /* lv7_w9.sks */; };
+		DE8111D81F67A190001AE254 /* Alien.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8111D71F67A190001AE254 /* Alien.swift */; };
+		DE8165041F02001A001B195D /* RacingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8165031F02001A001B195D /* RacingPlayer.swift */; };
+		DE8165061F0205F9001B195D /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8165051F0205F9001B195D /* PlayerProtocol.swift */; };
+		DE855A591F76137B00ADCE73 /* lv7_w11.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE855A581F76137B00ADCE73 /* lv7_w11.sks */; };
+		DE86BFDD1F9B400200FC5804 /* SwordsWoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86BFDC1F9B400200FC5804 /* SwordsWoman.swift */; };
+		DE86BFDF1F9BA58D00FC5804 /* ArcherWoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86BFDE1F9BA58D00FC5804 /* ArcherWoman.swift */; };
+		DE86BFE11F9BAFD900FC5804 /* WomanArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86BFE01F9BAFD900FC5804 /* WomanArrow.swift */; };
+		DE87C9A51E820D0A008F36D9 /* BossLv5.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE87C9A41E820D0A008F36D9 /* BossLv5.atlas */; };
+		DE8805651E9738F700907387 /* Supporter.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DE8805641E9738F700907387 /* Supporter.atlas */; };
+		DE953B4E1F6D3A22005CDAE8 /* RangerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE953B4D1F6D3A22005CDAE8 /* RangerProtocol.swift */; };
+		DEA335921EA13898009B34BD /* lv5_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEA335911EA13897009B34BD /* lv5_w3.sks */; };
+		DEAC2D571F6245D5008BE08A /* EnemyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC2D561F6245D5008BE08A /* EnemyProtocol.swift */; };
+		DEB460671E69A69B00530590 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB460661E69A69B00530590 /* MenuScene.swift */; };
+		DEB7B0761E601FC000BECDD9 /* GestureImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB7B0751E601FC000BECDD9 /* GestureImage.swift */; };
+		DEBB21BA1E64241B00451EBE /* Ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB21B91E64241B00451EBE /* Ghost.swift */; };
+		DEC373301EB1E05C00F5DA5D /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3732F1EB1E05C00F5DA5D /* SKTAudio.swift */; };
+		DEC5621C1F07FF3F003267D2 /* Crate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC5621B1F07FF3F003267D2 /* Crate.swift */; };
+		DEC5621F1F08246E003267D2 /* HeartExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEC5621D1F08246D003267D2 /* HeartExplosion.sks */; };
+		DEC562231F0827D1003267D2 /* CrateExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEC562211F0827D1003267D2 /* CrateExplosion.sks */; };
+		DEC562261F082A38003267D2 /* ParticalPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC562251F082A38003267D2 /* ParticalPool.swift */; };
+		DECE97861F4ACC0500810E89 /* BonusCrateExplotion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DECE97851F4ACC0500810E89 /* BonusCrateExplotion.sks */; };
+		DED965E21E8F909F0012BB70 /* Background.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DED965E11E8F909F0012BB70 /* Background.atlas */; };
+		DEDE9B371FA197FB001D69D8 /* BossLv9.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE9B361FA197FB001D69D8 /* BossLv9.swift */; };
+		DEEA4E481FA4EA73002763FA /* lv10_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E381FA4EA73002763FA /* lv10_w1.sks */; };
+		DEEA4E491FA4EA73002763FA /* lv10_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E391FA4EA73002763FA /* lv10_w2.sks */; };
+		DEEA4E4A1FA4EA73002763FA /* lv10_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E3A1FA4EA73002763FA /* lv10_w3.sks */; };
+		DEEA4E4B1FA4EA73002763FA /* lv10_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E3B1FA4EA73002763FA /* lv10_w4.sks */; };
+		DEEA4E4C1FA4EA73002763FA /* lv9_w1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E3D1FA4EA73002763FA /* lv9_w1.sks */; };
+		DEEA4E4D1FA4EA73002763FA /* lv9_w10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E3E1FA4EA73002763FA /* lv9_w10.sks */; };
+		DEEA4E4E1FA4EA73002763FA /* lv9_w11.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E3F1FA4EA73002763FA /* lv9_w11.sks */; };
+		DEEA4E4F1FA4EA73002763FA /* lv9_w2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E401FA4EA73002763FA /* lv9_w2.sks */; };
+		DEEA4E501FA4EA73002763FA /* lv9_w3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E411FA4EA73002763FA /* lv9_w3.sks */; };
+		DEEA4E511FA4EA73002763FA /* lv9_w4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E421FA4EA73002763FA /* lv9_w4.sks */; };
+		DEEA4E521FA4EA73002763FA /* lv9_w5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E431FA4EA73002763FA /* lv9_w5.sks */; };
+		DEEA4E531FA4EA73002763FA /* lv9_w6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E441FA4EA73002763FA /* lv9_w6.sks */; };
+		DEEA4E541FA4EA73002763FA /* lv9_w7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E451FA4EA73002763FA /* lv9_w7.sks */; };
+		DEEA4E551FA4EA73002763FA /* lv9_w8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E461FA4EA73002763FA /* lv9_w8.sks */; };
+		DEEA4E561FA4EA73002763FA /* lv9_w9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEEA4E471FA4EA73002763FA /* lv9_w9.sks */; };
+		DEEF9DC91E7CFDF40067A0D1 /* BossLv4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF9DC81E7CFDF40067A0D1 /* BossLv4.swift */; };
+		DEEF9DCB1E7D257F0067A0D1 /* BossLv4.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DEEF9DCA1E7D257F0067A0D1 /* BossLv4.atlas */; };
+		DEF049831EA52F420018B7B4 /* Level5_Intro.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DEF049821EA52F420018B7B4 /* Level5_Intro.atlas */; };
+		DEF049F61EA60DA70018B7B4 /* Level5_Ending.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEF049F41EA60DA70018B7B4 /* Level5_Ending.sks */; };
+		DEF049F71EA60DA70018B7B4 /* Level5_Ending.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF049F51EA60DA70018B7B4 /* Level5_Ending.swift */; };
+		DEF049F91EA710770018B7B4 /* Level5_End.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DEF049F81EA710770018B7B4 /* Level5_End.atlas */; };
+		DEF04A001EAB6A510018B7B4 /* Level1_Intro.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DEF049FF1EAB6A510018B7B4 /* Level1_Intro.atlas */; };
+		DEF04A021EAB6A690018B7B4 /* Level1_Intro.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEF04A011EAB6A690018B7B4 /* Level1_Intro.sks */; };
+		DEF2E6C81E8A5F93009E9E68 /* lv1_w11.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEF2E6C71E8A5F92009E9E68 /* lv1_w11.sks */; };
+		DEFCE9931F0E2BCC00F659A6 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCE9921F0E2BCB00F659A6 /* Coin.swift */; };
+		DEFCE9951F0E40D200F659A6 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCE9941F0E40D200F659A6 /* Star.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE07B8D31EA4C91E00966FAB /* Level5_Intro.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level5_Intro.sks; path = "Zombie Survival/Level5_Intro.sks"; sourceTree = "<group>"; };
+		DE07B8D51EA4C96F00966FAB /* Level5_Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level5_Intro.swift; path = "Zombie Survival/Level5_Intro.swift"; sourceTree = "<group>"; };
+		DE08DE161EC8552B00F64A06 /* RacingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RacingScene.swift; path = "Zombie Survival/RacingScene.swift"; sourceTree = "<group>"; };
+		DE08DE1C1EC85E3400F64A06 /* Level6_Intro.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level6_Intro.sks; path = "Zombie Survival/Level6_Intro.sks"; sourceTree = SOURCE_ROOT; };
+		DE08DE1D1EC85E3400F64A06 /* Level6_Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level6_Intro.swift; path = "Zombie Survival/Level6_Intro.swift"; sourceTree = SOURCE_ROOT; };
+		DE08DE201EC87A5200F64A06 /* Level6_Intro.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Level6_Intro.atlas; path = Assets/Level6_Intro.atlas; sourceTree = SOURCE_ROOT; };
+		DE09EFCF1E94D51600BF99AE /* Supporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Supporter.swift; path = "Zombie Survival/Supporter.swift"; sourceTree = "<group>"; };
+		DE0AE5FD1F5640E2009CAD58 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		DE0AE5FE1F5640E2009CAD58 /* click1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click1.wav; sourceTree = "<group>"; };
+		DE0AE6011F5640E2009CAD58 /* victory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = victory.wav; sourceTree = "<group>"; };
+		DE0AE6021F5640E2009CAD58 /* enemy_attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = enemy_attack.wav; sourceTree = "<group>"; };
+		DE0AE6031F5640E2009CAD58 /* enemy_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = enemy_die.wav; sourceTree = "<group>"; };
+		DE0AE6041F5640E2009CAD58 /* level_menu_background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = level_menu_background.mp3; sourceTree = "<group>"; };
+		DE0AE6061F5640E2009CAD58 /* main_menu_background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main_menu_background.mp3; sourceTree = "<group>"; };
+		DE0AE6081F5640E2009CAD58 /* Intro_tutorial_background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Intro_tutorial_background.mp3; sourceTree = "<group>"; };
+		DE0AE6091F5640E2009CAD58 /* Level5_Background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Level5_Background.wav; sourceTree = "<group>"; };
+		DE0AE60A1F5640E2009CAD58 /* level_done.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = level_done.wav; sourceTree = "<group>"; };
+		DE0AE60B1F5640E2009CAD58 /* main_background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main_background.mp3; sourceTree = "<group>"; };
+		DE0AE60D1F5640E2009CAD58 /* boss_attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boss_attack.wav; sourceTree = "<group>"; };
+		DE0AE60E1F5640E2009CAD58 /* BossLv1_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BossLv1_die.wav; sourceTree = "<group>"; };
+		DE0AE60F1F5640E2009CAD58 /* BossLv2_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BossLv2_die.wav; sourceTree = "<group>"; };
+		DE0AE6101F5640E2009CAD58 /* BossLv3_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BossLv3_die.wav; sourceTree = "<group>"; };
+		DE0AE6111F5640E2009CAD58 /* BossLv4_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BossLv4_die.wav; sourceTree = "<group>"; };
+		DE0AE6121F5640E2009CAD58 /* BossLv5_attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BossLv5_attack.wav; sourceTree = "<group>"; };
+		DE0AE6131F5640E2009CAD58 /* BossLv5_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BossLv5_die.wav; sourceTree = "<group>"; };
+		DE0AE6141F5640E2009CAD58 /* BossLv5_laugh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BossLv5_laugh.wav; sourceTree = "<group>"; };
+		DE0AE6151F5640E2009CAD58 /* ghost_attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ghost_attack.wav; sourceTree = "<group>"; };
+		DE0AE6161F5640E2009CAD58 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		DE0AE6171F5640E2009CAD58 /* lighting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lighting.wav; sourceTree = "<group>"; };
+		DE0AE6181F5640E2009CAD58 /* one_enemy_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = one_enemy_die.wav; sourceTree = "<group>"; };
+		DE0AE61B1F5640E2009CAD58 /* boss_reading.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boss_reading.mp3; sourceTree = "<group>"; };
+		DE0AE61C1F5640E2009CAD58 /* cat_flying_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat_flying_up.mp3; sourceTree = "<group>"; };
+		DE0AE61D1F5640E2009CAD58 /* level1_intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = level1_intro.mp3; sourceTree = "<group>"; };
+		DE0AE61E1F5640E2009CAD58 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
+		DE0AE61F1F5640E2009CAD58 /* Music_victory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_victory.mp3; sourceTree = "<group>"; };
+		DE0AE6211F5640E2009CAD58 /* Player_walk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Player_walk.wav; sourceTree = "<group>"; };
+		DE0AE6221F5640E2009CAD58 /* Player_win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Player_win.wav; sourceTree = "<group>"; };
+		DE0AE6231F5640E2009CAD58 /* spellDown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spellDown.wav; sourceTree = "<group>"; };
+		DE0AE6241F5640E2009CAD58 /* spellDownArrow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spellDownArrow.wav; sourceTree = "<group>"; };
+		DE0AE6251F5640E2009CAD58 /* spellHealing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spellHealing.wav; sourceTree = "<group>"; };
+		DE0AE6261F5640E2009CAD58 /* spellLeftArrow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spellLeftArrow.wav; sourceTree = "<group>"; };
+		DE0AE6271F5640E2009CAD58 /* spellRight.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spellRight.wav; sourceTree = "<group>"; };
+		DE0AE6281F5640E2009CAD58 /* spellUpArrow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spellUpArrow.wav; sourceTree = "<group>"; };
+		DE0AE62A1F5640E2009CAD58 /* Background_old.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Background_old.mp3; sourceTree = "<group>"; };
+		DE0AE62B1F5640E2009CAD58 /* Racing_Background.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racing_Background.m4a; sourceTree = "<group>"; };
+		DE0D9FE21E8E83230010B598 /* Gesture.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Gesture.atlas; path = Assets/Gesture.atlas; sourceTree = SOURCE_ROOT; };
+		DE10B1C71E98EA5F00BB1137 /* lv5_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w1.sks; sourceTree = "<group>"; };
+		DE10B1C81E98EA5F00BB1137 /* lv5_w10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w10.sks; sourceTree = "<group>"; };
+		DE10B1C91E98EA5F00BB1137 /* lv5_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w2.sks; sourceTree = "<group>"; };
+		DE10B1CB1E98EA5F00BB1137 /* lv5_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w4.sks; sourceTree = "<group>"; };
+		DE10B1CC1E98EA5F00BB1137 /* lv5_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w5.sks; sourceTree = "<group>"; };
+		DE10B1CD1E98EA5F00BB1137 /* lv5_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w6.sks; sourceTree = "<group>"; };
+		DE10B1CE1E98EA5F00BB1137 /* lv5_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w7.sks; sourceTree = "<group>"; };
+		DE10B1CF1E98EA5F00BB1137 /* lv5_w8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w8.sks; sourceTree = "<group>"; };
+		DE10B1D01E98EA5F00BB1137 /* lv5_w9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w9.sks; sourceTree = "<group>"; };
+		DE10B1DD1E98EED200BB1137 /* BossLv5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BossLv5.swift; path = "Zombie Survival/BossLv5.swift"; sourceTree = "<group>"; };
+		DE10B1DF1E98FFFF00BB1137 /* SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialEffects.swift; sourceTree = "<group>"; };
+		DE10B1FA1E99DD1100BB1137 /* Special_Effects.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Special_Effects.atlas; path = Assets/Special_Effects.atlas; sourceTree = SOURCE_ROOT; };
+		DE1126571E5C92AF009B4D4E /* Magic Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE11265A1E5C92AF009B4D4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE1126601E5C92AF009B4D4E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = "Zombie Survival/GameScene.swift"; sourceTree = "<group>"; };
+		DE1126621E5C92AF009B4D4E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DE1126651E5C92AF009B4D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE1126671E5C92AF009B4D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE11266A1E5C92AF009B4D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE11266C1E5C92B0009B4D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1126761E5C9523009B4D4E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = "Zombie Survival/Player.swift"; sourceTree = "<group>"; };
+		DE1126771E5C9523009B4D4E /* Zombie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zombie.swift; path = "Zombie Survival/Zombie.swift"; sourceTree = "<group>"; };
+		DE11267A1E5C9563009B4D4E /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Boss.swift; path = "Zombie Survival/Boss.swift"; sourceTree = "<group>"; };
+		DE11267C1E5C97BE009B4D4E /* DBPathRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBPathRecognizer.swift; sourceTree = "<group>"; };
+		DE11267D1E5C97BE009B4D4E /* RenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		DE12E39D1E76976B006DC59B /* BossLv2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BossLv2.swift; path = "Zombie Survival/BossLv2.swift"; sourceTree = "<group>"; };
+		DE12E39F1E76D051006DC59B /* BossLv2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = BossLv2.atlas; path = Assets/BossLv2.atlas; sourceTree = SOURCE_ROOT; };
+		DE138D6E1E686F4F007E3CE8 /* EncounterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncounterManager.swift; sourceTree = "<group>"; };
+		DE140B0D1EC0DD3E00B99AF0 /* Zombie_3.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Zombie_3.atlas; path = Assets/Zombie_3.atlas; sourceTree = SOURCE_ROOT; };
+		DE15B0671E83D4C4000BF46A /* hud.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = hud.atlas; path = Assets/hud.atlas; sourceTree = SOURCE_ROOT; };
+		DE1822611ECC5D3F00E2D020 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DE1AE8421E632E2E0069960B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		DE1EDB281ED48C38009DBADA /* Tiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tiles.sks; sourceTree = "<group>"; };
+		DE1EDB2A1ED48C6F009DBADA /* Object.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Object.atlas; path = Assets/Object.atlas; sourceTree = SOURCE_ROOT; };
+		DE1EDB2C1ED48CD7009DBADA /* RacingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = RacingScene.sks; path = "Zombie Survival/RacingScene.sks"; sourceTree = "<group>"; };
+		DE2BE8601E66D9DE008C2F1E /* enemies.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = enemies.atlas; path = Assets/enemies.atlas; sourceTree = SOURCE_ROOT; };
+		DE2D90531F68DE05003C20CC /* Archer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archer.swift; sourceTree = "<group>"; };
+		DE2D90551F68DE15003C20CC /* Witcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Witcher.swift; sourceTree = "<group>"; };
+		DE2D90571F68DE3E003C20CC /* Swordsman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swordsman.swift; sourceTree = "<group>"; };
+		DE2D90591F68E56A003C20CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE2DEDF31F3C532C00773BAC /* TNTExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TNTExplosion.sks; sourceTree = "<group>"; };
+		DE3320591F6BA28200B82FF6 /* Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		DE33205C1F6BA83800B82FF6 /* lv8_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w1.sks; sourceTree = "<group>"; };
+		DE33205D1F6BA83800B82FF6 /* lv8_w10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w10.sks; sourceTree = "<group>"; };
+		DE33205E1F6BA83800B82FF6 /* lv8_w11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w11.sks; sourceTree = "<group>"; };
+		DE33205F1F6BA83800B82FF6 /* lv8_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w2.sks; sourceTree = "<group>"; };
+		DE3320601F6BA83800B82FF6 /* lv8_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w3.sks; sourceTree = "<group>"; };
+		DE3320611F6BA83800B82FF6 /* lv8_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w4.sks; sourceTree = "<group>"; };
+		DE3320621F6BA83800B82FF6 /* lv8_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w5.sks; sourceTree = "<group>"; };
+		DE3320631F6BA83800B82FF6 /* lv8_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w6.sks; sourceTree = "<group>"; };
+		DE3320641F6BA83800B82FF6 /* lv8_w8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w8.sks; sourceTree = "<group>"; };
+		DE3320651F6BA83800B82FF6 /* lv8_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w7.sks; sourceTree = "<group>"; };
+		DE3320661F6BA83800B82FF6 /* lv8_w9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv8_w9.sks; sourceTree = "<group>"; };
+		DE3A316D1F936A1F0013CD84 /* Sprikeman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprikeman.swift; sourceTree = "<group>"; };
+		DE4375461EB08C6D008BBFDC /* Level1_Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level1_Intro.swift; path = "Zombie Survival/Level1_Intro.swift"; sourceTree = "<group>"; };
+		DE52B7AA1E66AC7D008FECDA /* Player.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Player.atlas; path = ../Assets/Player.atlas; sourceTree = "<group>"; };
+		DE5BE75D1E79270600A30223 /* lv3_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w1.sks; sourceTree = "<group>"; };
+		DE5BE75E1E79270600A30223 /* lv3_w10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w10.sks; sourceTree = "<group>"; };
+		DE5BE75F1E79270600A30223 /* lv3_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w2.sks; sourceTree = "<group>"; };
+		DE5BE7601E79270600A30223 /* lv3_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w3.sks; sourceTree = "<group>"; };
+		DE5BE7611E79270600A30223 /* lv3_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w4.sks; sourceTree = "<group>"; };
+		DE5BE7621E79270600A30223 /* lv3_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w5.sks; sourceTree = "<group>"; };
+		DE5BE7631E79270600A30223 /* lv3_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w6.sks; sourceTree = "<group>"; };
+		DE5BE7641E79270600A30223 /* lv3_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w7.sks; sourceTree = "<group>"; };
+		DE5BE7651E79270600A30223 /* lv3_w8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w8.sks; sourceTree = "<group>"; };
+		DE5BE7661E79270600A30223 /* lv3_w9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv3_w9.sks; sourceTree = "<group>"; };
+		DE5BE7721E792AAE00A30223 /* lv1_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w1.sks; sourceTree = "<group>"; };
+		DE5BE7731E792AAE00A30223 /* lv1_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w2.sks; sourceTree = "<group>"; };
+		DE5BE7741E792AAE00A30223 /* lv1_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w3.sks; sourceTree = "<group>"; };
+		DE5BE7751E792AAE00A30223 /* lv1_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w4.sks; sourceTree = "<group>"; };
+		DE5BE7761E792AAE00A30223 /* lv1_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w5.sks; sourceTree = "<group>"; };
+		DE5BE7771E792AAE00A30223 /* lv1_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w6.sks; sourceTree = "<group>"; };
+		DE5BE7781E792AAE00A30223 /* lv1_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w7.sks; sourceTree = "<group>"; };
+		DE5BE7791E792AAE00A30223 /* lv1_w8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w8.sks; sourceTree = "<group>"; };
+		DE5BE77A1E792AAE00A30223 /* lv1_w9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w9.sks; sourceTree = "<group>"; };
+		DE5BE77C1E792AAE00A30223 /* lv2_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w1.sks; sourceTree = "<group>"; };
+		DE5BE77D1E792AAE00A30223 /* lv2_w10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w10.sks; sourceTree = "<group>"; };
+		DE5BE77E1E792AAE00A30223 /* lv2_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w2.sks; sourceTree = "<group>"; };
+		DE5BE77F1E792AAE00A30223 /* lv2_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w3.sks; sourceTree = "<group>"; };
+		DE5BE7801E792AAE00A30223 /* lv2_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w4.sks; sourceTree = "<group>"; };
+		DE5BE7811E792AAE00A30223 /* lv2_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w5.sks; sourceTree = "<group>"; };
+		DE5BE7821E792AAE00A30223 /* lv2_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w6.sks; sourceTree = "<group>"; };
+		DE5BE7831E792AAE00A30223 /* lv2_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w7.sks; sourceTree = "<group>"; };
+		DE5BE7841E792AAE00A30223 /* lv2_w8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w8.sks; sourceTree = "<group>"; };
+		DE5BE7851E792AAE00A30223 /* lv2_w9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv2_w9.sks; sourceTree = "<group>"; };
+		DE5BE7991E7A29F700A30223 /* BossLv3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BossLv3.swift; path = "Zombie Survival/BossLv3.swift"; sourceTree = "<group>"; };
+		DE6318681F4C160300A5F64D /* Ork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ork.swift; sourceTree = "<group>"; };
+		DE6318741F4C6EFB00A5F64D /* CreepProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreepProtocol.swift; sourceTree = "<group>"; };
+		DE6318761F4E58C300A5F64D /* Ork_Captain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ork_Captain.swift; sourceTree = "<group>"; };
+		DE63187A1F514F0900A5F64D /* MiniBoss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniBoss.swift; sourceTree = "<group>"; };
+		DE63187C1F51786100A5F64D /* BossLv7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BossLv7.swift; sourceTree = "<group>"; };
+		DE65423A1E6EC1D4008C04C1 /* LevelMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelMenu.swift; path = "Zombie Survival/LevelMenu.swift"; sourceTree = "<group>"; };
+		DE65423C1E6FA6CD008C04C1 /* BossLv1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BossLv1.swift; path = "Zombie Survival/BossLv1.swift"; sourceTree = "<group>"; };
+		DE65423E1E700F25008C04C1 /* BossLv1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = BossLv1.atlas; path = Assets/BossLv1.atlas; sourceTree = SOURCE_ROOT; };
+		DE6947241EF7C8FC00936B7F /* RacingScene.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = RacingScene.atlas; path = Assets/RacingScene.atlas; sourceTree = SOURCE_ROOT; };
+		DE6AE71D1E7C1473007559E4 /* BossLv3.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = BossLv3.atlas; path = ../Assets/BossLv3.atlas; sourceTree = "<group>"; };
+		DE6AE7201E7C1523007559E4 /* lv4_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv4_w1.sks; sourceTree = "<group>"; };
+		DE6AE7221E7C1523007559E4 /* lv4_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv4_w2.sks; sourceTree = "<group>"; };
+		DE6AE7231E7C1523007559E4 /* lv4_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv4_w3.sks; sourceTree = "<group>"; };
+		DE6AE7241E7C1523007559E4 /* lv4_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv4_w4.sks; sourceTree = "<group>"; };
+		DE6AE7251E7C1523007559E4 /* lv4_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv4_w5.sks; sourceTree = "<group>"; };
+		DE6AE7261E7C1523007559E4 /* lv4_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv4_w6.sks; sourceTree = "<group>"; };
+		DE6AE7271E7C1523007559E4 /* lv4_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv4_w7.sks; sourceTree = "<group>"; };
+		DE6AE7341E7C1CD5007559E4 /* lv1_w10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w10.sks; sourceTree = "<group>"; };
+		DE7497881F8C6855004EBBED /* BossLv8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BossLv8.swift; sourceTree = "<group>"; };
+		DE8111C11F650515001AE254 /* lv7_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w1.sks; sourceTree = "<group>"; };
+		DE8111C21F650515001AE254 /* lv7_w10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w10.sks; sourceTree = "<group>"; };
+		DE8111C31F650515001AE254 /* lv7_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w2.sks; sourceTree = "<group>"; };
+		DE8111C41F650515001AE254 /* lv7_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w3.sks; sourceTree = "<group>"; };
+		DE8111C51F650515001AE254 /* lv7_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w4.sks; sourceTree = "<group>"; };
+		DE8111C61F650515001AE254 /* lv7_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w5.sks; sourceTree = "<group>"; };
+		DE8111C71F650515001AE254 /* lv7_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w6.sks; sourceTree = "<group>"; };
+		DE8111C81F650515001AE254 /* lv7_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w7.sks; sourceTree = "<group>"; };
+		DE8111C91F650515001AE254 /* lv7_w8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w8.sks; sourceTree = "<group>"; };
+		DE8111CA1F650515001AE254 /* lv7_w9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w9.sks; sourceTree = "<group>"; };
+		DE8111D71F67A190001AE254 /* Alien.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alien.swift; sourceTree = "<group>"; };
+		DE8165031F02001A001B195D /* RacingPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RacingPlayer.swift; sourceTree = "<group>"; };
+		DE8165051F0205F9001B195D /* PlayerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProtocol.swift; sourceTree = "<group>"; };
+		DE855A581F76137B00ADCE73 /* lv7_w11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv7_w11.sks; sourceTree = "<group>"; };
+		DE86BFDC1F9B400200FC5804 /* SwordsWoman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwordsWoman.swift; sourceTree = "<group>"; };
+		DE86BFDE1F9BA58D00FC5804 /* ArcherWoman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcherWoman.swift; sourceTree = "<group>"; };
+		DE86BFE01F9BAFD900FC5804 /* WomanArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WomanArrow.swift; sourceTree = "<group>"; };
+		DE87C9A41E820D0A008F36D9 /* BossLv5.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = BossLv5.atlas; path = ../Assets/BossLv5.atlas; sourceTree = "<group>"; };
+		DE8805641E9738F700907387 /* Supporter.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Supporter.atlas; path = Assets/Supporter.atlas; sourceTree = SOURCE_ROOT; };
+		DE953B4D1F6D3A22005CDAE8 /* RangerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangerProtocol.swift; sourceTree = "<group>"; };
+		DEA335911EA13897009B34BD /* lv5_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv5_w3.sks; sourceTree = "<group>"; };
+		DEAC2D561F6245D5008BE08A /* EnemyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyProtocol.swift; sourceTree = "<group>"; };
+		DEB460661E69A69B00530590 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuScene.swift; path = "Zombie Survival/MenuScene.swift"; sourceTree = "<group>"; };
+		DEB7B0751E601FC000BECDD9 /* GestureImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GestureImage.swift; path = ../GestureImage.swift; sourceTree = "<group>"; };
+		DEBB21B91E64241B00451EBE /* Ghost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ghost.swift; sourceTree = "<group>"; };
+		DEC3732F1EB1E05C00F5DA5D /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		DEC5621B1F07FF3F003267D2 /* Crate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crate.swift; sourceTree = "<group>"; };
+		DEC5621D1F08246D003267D2 /* HeartExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HeartExplosion.sks; sourceTree = "<group>"; };
+		DEC562211F0827D1003267D2 /* CrateExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CrateExplosion.sks; sourceTree = "<group>"; };
+		DEC562251F082A38003267D2 /* ParticalPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticalPool.swift; sourceTree = "<group>"; };
+		DECE97851F4ACC0500810E89 /* BonusCrateExplotion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BonusCrateExplotion.sks; sourceTree = "<group>"; };
+		DED965E11E8F909F0012BB70 /* Background.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Background.atlas; path = Assets/Background.atlas; sourceTree = SOURCE_ROOT; };
+		DEDE9B361FA197FB001D69D8 /* BossLv9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BossLv9.swift; sourceTree = "<group>"; };
+		DEEA4E381FA4EA73002763FA /* lv10_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv10_w1.sks; sourceTree = "<group>"; };
+		DEEA4E391FA4EA73002763FA /* lv10_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv10_w2.sks; sourceTree = "<group>"; };
+		DEEA4E3A1FA4EA73002763FA /* lv10_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv10_w3.sks; sourceTree = "<group>"; };
+		DEEA4E3B1FA4EA73002763FA /* lv10_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv10_w4.sks; sourceTree = "<group>"; };
+		DEEA4E3D1FA4EA73002763FA /* lv9_w1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w1.sks; sourceTree = "<group>"; };
+		DEEA4E3E1FA4EA73002763FA /* lv9_w10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w10.sks; sourceTree = "<group>"; };
+		DEEA4E3F1FA4EA73002763FA /* lv9_w11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w11.sks; sourceTree = "<group>"; };
+		DEEA4E401FA4EA73002763FA /* lv9_w2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w2.sks; sourceTree = "<group>"; };
+		DEEA4E411FA4EA73002763FA /* lv9_w3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w3.sks; sourceTree = "<group>"; };
+		DEEA4E421FA4EA73002763FA /* lv9_w4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w4.sks; sourceTree = "<group>"; };
+		DEEA4E431FA4EA73002763FA /* lv9_w5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w5.sks; sourceTree = "<group>"; };
+		DEEA4E441FA4EA73002763FA /* lv9_w6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w6.sks; sourceTree = "<group>"; };
+		DEEA4E451FA4EA73002763FA /* lv9_w7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w7.sks; sourceTree = "<group>"; };
+		DEEA4E461FA4EA73002763FA /* lv9_w8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w8.sks; sourceTree = "<group>"; };
+		DEEA4E471FA4EA73002763FA /* lv9_w9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv9_w9.sks; sourceTree = "<group>"; };
+		DEEF9DC81E7CFDF40067A0D1 /* BossLv4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BossLv4.swift; path = "Zombie Survival/BossLv4.swift"; sourceTree = "<group>"; };
+		DEEF9DCA1E7D257F0067A0D1 /* BossLv4.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = BossLv4.atlas; path = ../Assets/BossLv4.atlas; sourceTree = "<group>"; };
+		DEF049821EA52F420018B7B4 /* Level5_Intro.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Level5_Intro.atlas; path = Assets/Level5_Intro.atlas; sourceTree = SOURCE_ROOT; };
+		DEF049F41EA60DA70018B7B4 /* Level5_Ending.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level5_Ending.sks; path = "Zombie Survival/Level5_Ending.sks"; sourceTree = "<group>"; };
+		DEF049F51EA60DA70018B7B4 /* Level5_Ending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level5_Ending.swift; path = "Zombie Survival/Level5_Ending.swift"; sourceTree = "<group>"; };
+		DEF049F81EA710770018B7B4 /* Level5_End.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Level5_End.atlas; path = Assets/Level5_End.atlas; sourceTree = SOURCE_ROOT; };
+		DEF049FF1EAB6A510018B7B4 /* Level1_Intro.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Level1_Intro.atlas; path = Assets/Level1_Intro.atlas; sourceTree = SOURCE_ROOT; };
+		DEF04A011EAB6A690018B7B4 /* Level1_Intro.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level1_Intro.sks; path = "Zombie Survival/Level1_Intro.sks"; sourceTree = "<group>"; };
+		DEF2E6C71E8A5F92009E9E68 /* lv1_w11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lv1_w11.sks; sourceTree = "<group>"; };
+		DEFCE9921F0E2BCB00F659A6 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		DEFCE9941F0E40D200F659A6 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE1126541E5C92AF009B4D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1822621ECC5D3F00E2D020 /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE0AE5FC1F5640E2009CAD58 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE5FD1F5640E2009CAD58 /* click.wav */,
+				DE0AE5FE1F5640E2009CAD58 /* click1.wav */,
+				DE0AE5FF1F5640E2009CAD58 /* Cut Scenes */,
+				DE0AE6021F5640E2009CAD58 /* enemy_attack.wav */,
+				DE0AE6031F5640E2009CAD58 /* enemy_die.wav */,
+				DE0AE6041F5640E2009CAD58 /* level_menu_background.mp3 */,
+				DE0AE6051F5640E2009CAD58 /* Main Menu */,
+				DE0AE6071F5640E2009CAD58 /* Main Scene */,
+				DE0AE61A1F5640E2009CAD58 /* mp3 */,
+				DE0AE61E1F5640E2009CAD58 /* music.m4a */,
+				DE0AE61F1F5640E2009CAD58 /* Music_victory.mp3 */,
+				DE0AE6201F5640E2009CAD58 /* Player Sound */,
+				DE0AE6291F5640E2009CAD58 /* Racing Scene */,
+			);
+			name = Sounds;
+			path = Assets/Sounds;
+			sourceTree = "<group>";
+		};
+		DE0AE5FF1F5640E2009CAD58 /* Cut Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE6001F5640E2009CAD58 /* Ending */,
+			);
+			path = "Cut Scenes";
+			sourceTree = "<group>";
+		};
+		DE0AE6001F5640E2009CAD58 /* Ending */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE6011F5640E2009CAD58 /* victory.wav */,
+			);
+			path = Ending;
+			sourceTree = "<group>";
+		};
+		DE0AE6051F5640E2009CAD58 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE6061F5640E2009CAD58 /* main_menu_background.mp3 */,
+			);
+			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		DE0AE6071F5640E2009CAD58 /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE6081F5640E2009CAD58 /* Intro_tutorial_background.mp3 */,
+				DE0AE6091F5640E2009CAD58 /* Level5_Background.wav */,
+				DE0AE60A1F5640E2009CAD58 /* level_done.wav */,
+				DE0AE60B1F5640E2009CAD58 /* main_background.mp3 */,
+				DE0AE60C1F5640E2009CAD58 /* SFX */,
+			);
+			path = "Main Scene";
+			sourceTree = "<group>";
+		};
+		DE0AE60C1F5640E2009CAD58 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE60D1F5640E2009CAD58 /* boss_attack.wav */,
+				DE0AE60E1F5640E2009CAD58 /* BossLv1_die.wav */,
+				DE0AE60F1F5640E2009CAD58 /* BossLv2_die.wav */,
+				DE0AE6101F5640E2009CAD58 /* BossLv3_die.wav */,
+				DE0AE6111F5640E2009CAD58 /* BossLv4_die.wav */,
+				DE0AE6121F5640E2009CAD58 /* BossLv5_attack.wav */,
+				DE0AE6131F5640E2009CAD58 /* BossLv5_die.wav */,
+				DE0AE6141F5640E2009CAD58 /* BossLv5_laugh.wav */,
+				DE0AE6151F5640E2009CAD58 /* ghost_attack.wav */,
+				DE0AE6161F5640E2009CAD58 /* heart.wav */,
+				DE0AE6171F5640E2009CAD58 /* lighting.wav */,
+				DE0AE6181F5640E2009CAD58 /* one_enemy_die.wav */,
+			);
+			path = SFX;
+			sourceTree = "<group>";
+		};
+		DE0AE61A1F5640E2009CAD58 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE61B1F5640E2009CAD58 /* boss_reading.mp3 */,
+				DE0AE61C1F5640E2009CAD58 /* cat_flying_up.mp3 */,
+				DE0AE61D1F5640E2009CAD58 /* level1_intro.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
+		DE0AE6201F5640E2009CAD58 /* Player Sound */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE6211F5640E2009CAD58 /* Player_walk.wav */,
+				DE0AE6221F5640E2009CAD58 /* Player_win.wav */,
+				DE0AE6231F5640E2009CAD58 /* spellDown.wav */,
+				DE0AE6241F5640E2009CAD58 /* spellDownArrow.wav */,
+				DE0AE6251F5640E2009CAD58 /* spellHealing.wav */,
+				DE0AE6261F5640E2009CAD58 /* spellLeftArrow.wav */,
+				DE0AE6271F5640E2009CAD58 /* spellRight.wav */,
+				DE0AE6281F5640E2009CAD58 /* spellUpArrow.wav */,
+			);
+			path = "Player Sound";
+			sourceTree = "<group>";
+		};
+		DE0AE6291F5640E2009CAD58 /* Racing Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE62A1F5640E2009CAD58 /* Background_old.mp3 */,
+				DE0AE62B1F5640E2009CAD58 /* Racing_Background.m4a */,
+			);
+			path = "Racing Scene";
+			sourceTree = "<group>";
+		};
+		DE10B1C61E98EA5F00BB1137 /* level_5 */ = {
+			isa = PBXGroup;
+			children = (
+				DE10B1C71E98EA5F00BB1137 /* lv5_w1.sks */,
+				DE10B1C91E98EA5F00BB1137 /* lv5_w2.sks */,
+				DEA335911EA13897009B34BD /* lv5_w3.sks */,
+				DE10B1CB1E98EA5F00BB1137 /* lv5_w4.sks */,
+				DE10B1CC1E98EA5F00BB1137 /* lv5_w5.sks */,
+				DE10B1CD1E98EA5F00BB1137 /* lv5_w6.sks */,
+				DE10B1CE1E98EA5F00BB1137 /* lv5_w7.sks */,
+				DE10B1CF1E98EA5F00BB1137 /* lv5_w8.sks */,
+				DE10B1D01E98EA5F00BB1137 /* lv5_w9.sks */,
+				DE10B1C81E98EA5F00BB1137 /* lv5_w10.sks */,
+			);
+			name = level_5;
+			path = levels/level_5;
+			sourceTree = "<group>";
+		};
+		DE11264E1E5C92AF009B4D4E = {
+			isa = PBXGroup;
+			children = (
+				DE2D90591F68E56A003C20CC /* Assets.xcassets */,
+				DE8111D51F659417001AE254 /* Projectiles */,
+				DE0AE5FC1F5640E2009CAD58 /* Sounds */,
+				DEFCE9911F0E2BBA00F659A6 /* Bonus Object */,
+				DE37269A1F3D916400828D04 /* Bosses */,
+				DE2DEDF21F3C50F600773BAC /* Emmiter */,
+				DE37269B1F3D91FD00828D04 /* Ending and Intro */,
+				DE1822601ECC5D3E00E2D020 /* Frameworks */,
+				DE37269C1F3D928300828D04 /* Player and NPC */,
+				DE1126581E5C92AF009B4D4E /* Products */,
+				DE37269E1F3D935100828D04 /* Scenes */,
+				DE1126591E5C92AF009B4D4E /* Zombie Survival */,
+			);
+			sourceTree = "<group>";
+		};
+		DE1126581E5C92AF009B4D4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE1126571E5C92AF009B4D4E /* Magic Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE1126591E5C92AF009B4D4E /* Zombie Survival */ = {
+			isa = PBXGroup;
+			children = (
+				DE6947241EF7C8FC00936B7F /* RacingScene.atlas */,
+				DE1EDB2A1ED48C6F009DBADA /* Object.atlas */,
+				DE08DE201EC87A5200F64A06 /* Level6_Intro.atlas */,
+				DED965E11E8F909F0012BB70 /* Background.atlas */,
+				DE65423E1E700F25008C04C1 /* BossLv1.atlas */,
+				DE12E39F1E76D051006DC59B /* BossLv2.atlas */,
+				DE6AE71D1E7C1473007559E4 /* BossLv3.atlas */,
+				DEEF9DCA1E7D257F0067A0D1 /* BossLv4.atlas */,
+				DE87C9A41E820D0A008F36D9 /* BossLv5.atlas */,
+				DE2BE8601E66D9DE008C2F1E /* enemies.atlas */,
+				DE0D9FE21E8E83230010B598 /* Gesture.atlas */,
+				DE15B0671E83D4C4000BF46A /* hud.atlas */,
+				DEF049FF1EAB6A510018B7B4 /* Level1_Intro.atlas */,
+				DEF049F81EA710770018B7B4 /* Level5_End.atlas */,
+				DEF049821EA52F420018B7B4 /* Level5_Intro.atlas */,
+				DE52B7AA1E66AC7D008FECDA /* Player.atlas */,
+				DE10B1FA1E99DD1100BB1137 /* Special_Effects.atlas */,
+				DE8805641E9738F700907387 /* Supporter.atlas */,
+				DE140B0D1EC0DD3E00B99AF0 /* Zombie_3.atlas */,
+				DE11266C1E5C92B0009B4D4E /* Info.plist */,
+				DE11267C1E5C97BE009B4D4E /* DBPathRecognizer.swift */,
+				DE11265A1E5C92AF009B4D4E /* AppDelegate.swift */,
+				DE138D6E1E686F4F007E3CE8 /* EncounterManager.swift */,
+				DE1126621E5C92AF009B4D4E /* GameViewController.swift */,
+				DEB7B0751E601FC000BECDD9 /* GestureImage.swift */,
+				DE1AE8421E632E2E0069960B /* HUD.swift */,
+				DE11267D1E5C97BE009B4D4E /* RenderView.swift */,
+				DEC3732F1EB1E05C00F5DA5D /* SKTAudio.swift */,
+				DE10B1DF1E98FFFF00BB1137 /* SpecialEffects.swift */,
+				DE1126671E5C92AF009B4D4E /* Assets.xcassets */,
+				DE7AB6A41E67F1E800AAFD34 /* Encountera */,
+				DE1126691E5C92AF009B4D4E /* LaunchScreen.storyboard */,
+				DE1126641E5C92AF009B4D4E /* Main.storyboard */,
+				DE1EDB281ED48C38009DBADA /* Tiles.sks */,
+			);
+			path = "Zombie Survival";
+			sourceTree = "<group>";
+		};
+		DE1822601ECC5D3E00E2D020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE1822611ECC5D3F00E2D020 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE2D90521F68DD64003C20CC /* Fantasy Elves */ = {
+			isa = PBXGroup;
+			children = (
+				DE2D90531F68DE05003C20CC /* Archer.swift */,
+				DE2D90551F68DE15003C20CC /* Witcher.swift */,
+				DE2D90571F68DE3E003C20CC /* Swordsman.swift */,
+				DE3A316D1F936A1F0013CD84 /* Sprikeman.swift */,
+			);
+			name = "Fantasy Elves";
+			sourceTree = "<group>";
+		};
+		DE2DEDF11F3C4B7100773BAC /* RacingScene */ = {
+			isa = PBXGroup;
+			children = (
+				DE8165031F02001A001B195D /* RacingPlayer.swift */,
+				DE1EDB2C1ED48CD7009DBADA /* RacingScene.sks */,
+				DE08DE161EC8552B00F64A06 /* RacingScene.swift */,
+			);
+			name = RacingScene;
+			sourceTree = "<group>";
+		};
+		DE2DEDF21F3C50F600773BAC /* Emmiter */ = {
+			isa = PBXGroup;
+			children = (
+				DEC562251F082A38003267D2 /* ParticalPool.swift */,
+				DEC5621D1F08246D003267D2 /* HeartExplosion.sks */,
+				DE2DEDF31F3C532C00773BAC /* TNTExplosion.sks */,
+				DEC562211F0827D1003267D2 /* CrateExplosion.sks */,
+				DECE97851F4ACC0500810E89 /* BonusCrateExplotion.sks */,
+			);
+			name = Emmiter;
+			sourceTree = "<group>";
+		};
+		DE33205B1F6BA83700B82FF6 /* level_8 */ = {
+			isa = PBXGroup;
+			children = (
+				DE33205C1F6BA83800B82FF6 /* lv8_w1.sks */,
+				DE33205F1F6BA83800B82FF6 /* lv8_w2.sks */,
+				DE3320601F6BA83800B82FF6 /* lv8_w3.sks */,
+				DE3320611F6BA83800B82FF6 /* lv8_w4.sks */,
+				DE3320621F6BA83800B82FF6 /* lv8_w5.sks */,
+				DE3320631F6BA83800B82FF6 /* lv8_w6.sks */,
+				DE3320651F6BA83800B82FF6 /* lv8_w7.sks */,
+				DE3320641F6BA83800B82FF6 /* lv8_w8.sks */,
+				DE3320661F6BA83800B82FF6 /* lv8_w9.sks */,
+				DE33205D1F6BA83800B82FF6 /* lv8_w10.sks */,
+				DE33205E1F6BA83800B82FF6 /* lv8_w11.sks */,
+			);
+			name = level_8;
+			path = levels/level_8;
+			sourceTree = "<group>";
+		};
+		DE37269A1F3D916400828D04 /* Bosses */ = {
+			isa = PBXGroup;
+			children = (
+				DE11267A1E5C9563009B4D4E /* Boss.swift */,
+				DE65423C1E6FA6CD008C04C1 /* BossLv1.swift */,
+				DE12E39D1E76976B006DC59B /* BossLv2.swift */,
+				DE5BE7991E7A29F700A30223 /* BossLv3.swift */,
+				DEEF9DC81E7CFDF40067A0D1 /* BossLv4.swift */,
+				DE10B1DD1E98EED200BB1137 /* BossLv5.swift */,
+				DE63187C1F51786100A5F64D /* BossLv7.swift */,
+				DE7497881F8C6855004EBBED /* BossLv8.swift */,
+				DEDE9B361FA197FB001D69D8 /* BossLv9.swift */,
+			);
+			name = Bosses;
+			sourceTree = "<group>";
+		};
+		DE37269B1F3D91FD00828D04 /* Ending and Intro */ = {
+			isa = PBXGroup;
+			children = (
+				DE4375461EB08C6D008BBFDC /* Level1_Intro.swift */,
+				DEF04A011EAB6A690018B7B4 /* Level1_Intro.sks */,
+				DE07B8D51EA4C96F00966FAB /* Level5_Intro.swift */,
+				DE07B8D31EA4C91E00966FAB /* Level5_Intro.sks */,
+				DEF049F51EA60DA70018B7B4 /* Level5_Ending.swift */,
+				DEF049F41EA60DA70018B7B4 /* Level5_Ending.sks */,
+				DE08DE1D1EC85E3400F64A06 /* Level6_Intro.swift */,
+				DE08DE1C1EC85E3400F64A06 /* Level6_Intro.sks */,
+			);
+			name = "Ending and Intro";
+			sourceTree = "<group>";
+		};
+		DE37269C1F3D928300828D04 /* Player and NPC */ = {
+			isa = PBXGroup;
+			children = (
+				DE86BFDB1F9B3FB000FC5804 /* Woman Warrior */,
+				DE2D90521F68DD64003C20CC /* Fantasy Elves */,
+				DE8111D61F67A07D001AE254 /* Alien */,
+				DE6318611F4C158A00A5F64D /* Orks */,
+				DE1126761E5C9523009B4D4E /* Player.swift */,
+				DE6318741F4C6EFB00A5F64D /* CreepProtocol.swift */,
+				DEBB21B91E64241B00451EBE /* Ghost.swift */,
+				DE8165051F0205F9001B195D /* PlayerProtocol.swift */,
+				DE09EFCF1E94D51600BF99AE /* Supporter.swift */,
+				DE1126771E5C9523009B4D4E /* Zombie.swift */,
+				DEAC2D561F6245D5008BE08A /* EnemyProtocol.swift */,
+				DE953B4D1F6D3A22005CDAE8 /* RangerProtocol.swift */,
+			);
+			name = "Player and NPC";
+			sourceTree = "<group>";
+		};
+		DE37269E1F3D935100828D04 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DEB460661E69A69B00530590 /* MenuScene.swift */,
+				DE65423A1E6EC1D4008C04C1 /* LevelMenu.swift */,
+				DE1126601E5C92AF009B4D4E /* GameScene.swift */,
+				DE2DEDF11F3C4B7100773BAC /* RacingScene */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		DE5BE75C1E79270600A30223 /* level_3 */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BE75D1E79270600A30223 /* lv3_w1.sks */,
+				DE5BE75F1E79270600A30223 /* lv3_w2.sks */,
+				DE5BE7601E79270600A30223 /* lv3_w3.sks */,
+				DE5BE7611E79270600A30223 /* lv3_w4.sks */,
+				DE5BE7621E79270600A30223 /* lv3_w5.sks */,
+				DE5BE7631E79270600A30223 /* lv3_w6.sks */,
+				DE5BE7641E79270600A30223 /* lv3_w7.sks */,
+				DE5BE7651E79270600A30223 /* lv3_w8.sks */,
+				DE5BE7661E79270600A30223 /* lv3_w9.sks */,
+				DE5BE75E1E79270600A30223 /* lv3_w10.sks */,
+			);
+			name = level_3;
+			path = levels/level_3;
+			sourceTree = "<group>";
+		};
+		DE5BE7711E792AAE00A30223 /* level_1 */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BE7721E792AAE00A30223 /* lv1_w1.sks */,
+				DE5BE7731E792AAE00A30223 /* lv1_w2.sks */,
+				DE5BE7741E792AAE00A30223 /* lv1_w3.sks */,
+				DE5BE7751E792AAE00A30223 /* lv1_w4.sks */,
+				DE5BE7761E792AAE00A30223 /* lv1_w5.sks */,
+				DE5BE7771E792AAE00A30223 /* lv1_w6.sks */,
+				DE5BE7781E792AAE00A30223 /* lv1_w7.sks */,
+				DE5BE7791E792AAE00A30223 /* lv1_w8.sks */,
+				DE5BE77A1E792AAE00A30223 /* lv1_w9.sks */,
+				DE6AE7341E7C1CD5007559E4 /* lv1_w10.sks */,
+				DEF2E6C71E8A5F92009E9E68 /* lv1_w11.sks */,
+			);
+			name = level_1;
+			path = levels/level_1;
+			sourceTree = "<group>";
+		};
+		DE5BE77B1E792AAE00A30223 /* level_2 */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BE77C1E792AAE00A30223 /* lv2_w1.sks */,
+				DE5BE77E1E792AAE00A30223 /* lv2_w2.sks */,
+				DE5BE77F1E792AAE00A30223 /* lv2_w3.sks */,
+				DE5BE7801E792AAE00A30223 /* lv2_w4.sks */,
+				DE5BE7811E792AAE00A30223 /* lv2_w5.sks */,
+				DE5BE7821E792AAE00A30223 /* lv2_w6.sks */,
+				DE5BE7831E792AAE00A30223 /* lv2_w7.sks */,
+				DE5BE7841E792AAE00A30223 /* lv2_w8.sks */,
+				DE5BE7851E792AAE00A30223 /* lv2_w9.sks */,
+				DE5BE77D1E792AAE00A30223 /* lv2_w10.sks */,
+			);
+			name = level_2;
+			path = levels/level_2;
+			sourceTree = "<group>";
+		};
+		DE6318611F4C158A00A5F64D /* Orks */ = {
+			isa = PBXGroup;
+			children = (
+				DE6318681F4C160300A5F64D /* Ork.swift */,
+				DE63187A1F514F0900A5F64D /* MiniBoss.swift */,
+				DE6318761F4E58C300A5F64D /* Ork_Captain.swift */,
+			);
+			name = Orks;
+			sourceTree = "<group>";
+		};
+		DE6AE71F1E7C1523007559E4 /* level_4 */ = {
+			isa = PBXGroup;
+			children = (
+				DE6AE7201E7C1523007559E4 /* lv4_w1.sks */,
+				DE6AE7221E7C1523007559E4 /* lv4_w2.sks */,
+				DE6AE7231E7C1523007559E4 /* lv4_w3.sks */,
+				DE6AE7241E7C1523007559E4 /* lv4_w4.sks */,
+				DE6AE7251E7C1523007559E4 /* lv4_w5.sks */,
+				DE6AE7261E7C1523007559E4 /* lv4_w6.sks */,
+				DE6AE7271E7C1523007559E4 /* lv4_w7.sks */,
+			);
+			name = level_4;
+			path = levels/level_4;
+			sourceTree = "<group>";
+		};
+		DE7AB6A41E67F1E800AAFD34 /* Encountera */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA4E3C1FA4EA73002763FA /* level_9 */,
+				DEEA4E371FA4EA73002763FA /* level_10 */,
+				DE33205B1F6BA83700B82FF6 /* level_8 */,
+				DE8111C01F650515001AE254 /* level_7 */,
+				DE5BE7711E792AAE00A30223 /* level_1 */,
+				DE5BE77B1E792AAE00A30223 /* level_2 */,
+				DE5BE75C1E79270600A30223 /* level_3 */,
+				DE6AE71F1E7C1523007559E4 /* level_4 */,
+				DE10B1C61E98EA5F00BB1137 /* level_5 */,
+			);
+			name = Encountera;
+			sourceTree = "<group>";
+		};
+		DE8111C01F650515001AE254 /* level_7 */ = {
+			isa = PBXGroup;
+			children = (
+				DE8111C11F650515001AE254 /* lv7_w1.sks */,
+				DE8111C31F650515001AE254 /* lv7_w2.sks */,
+				DE8111C41F650515001AE254 /* lv7_w3.sks */,
+				DE8111C51F650515001AE254 /* lv7_w4.sks */,
+				DE8111C61F650515001AE254 /* lv7_w5.sks */,
+				DE8111C71F650515001AE254 /* lv7_w6.sks */,
+				DE8111C81F650515001AE254 /* lv7_w7.sks */,
+				DE8111C91F650515001AE254 /* lv7_w8.sks */,
+				DE8111CA1F650515001AE254 /* lv7_w9.sks */,
+				DE8111C21F650515001AE254 /* lv7_w10.sks */,
+				DE855A581F76137B00ADCE73 /* lv7_w11.sks */,
+			);
+			name = level_7;
+			path = levels/level_7;
+			sourceTree = "<group>";
+		};
+		DE8111D51F659417001AE254 /* Projectiles */ = {
+			isa = PBXGroup;
+			children = (
+				DE3320591F6BA28200B82FF6 /* Arrow.swift */,
+				DE86BFE01F9BAFD900FC5804 /* WomanArrow.swift */,
+			);
+			name = Projectiles;
+			sourceTree = "<group>";
+		};
+		DE8111D61F67A07D001AE254 /* Alien */ = {
+			isa = PBXGroup;
+			children = (
+				DE8111D71F67A190001AE254 /* Alien.swift */,
+			);
+			name = Alien;
+			sourceTree = "<group>";
+		};
+		DE86BFDB1F9B3FB000FC5804 /* Woman Warrior */ = {
+			isa = PBXGroup;
+			children = (
+				DE86BFDC1F9B400200FC5804 /* SwordsWoman.swift */,
+				DE86BFDE1F9BA58D00FC5804 /* ArcherWoman.swift */,
+			);
+			name = "Woman Warrior";
+			sourceTree = "<group>";
+		};
+		DEEA4E371FA4EA73002763FA /* level_10 */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA4E381FA4EA73002763FA /* lv10_w1.sks */,
+				DEEA4E391FA4EA73002763FA /* lv10_w2.sks */,
+				DEEA4E3A1FA4EA73002763FA /* lv10_w3.sks */,
+				DEEA4E3B1FA4EA73002763FA /* lv10_w4.sks */,
+			);
+			name = level_10;
+			path = levels/level_10;
+			sourceTree = "<group>";
+		};
+		DEEA4E3C1FA4EA73002763FA /* level_9 */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA4E3D1FA4EA73002763FA /* lv9_w1.sks */,
+				DEEA4E3E1FA4EA73002763FA /* lv9_w10.sks */,
+				DEEA4E3F1FA4EA73002763FA /* lv9_w11.sks */,
+				DEEA4E401FA4EA73002763FA /* lv9_w2.sks */,
+				DEEA4E411FA4EA73002763FA /* lv9_w3.sks */,
+				DEEA4E421FA4EA73002763FA /* lv9_w4.sks */,
+				DEEA4E431FA4EA73002763FA /* lv9_w5.sks */,
+				DEEA4E441FA4EA73002763FA /* lv9_w6.sks */,
+				DEEA4E451FA4EA73002763FA /* lv9_w7.sks */,
+				DEEA4E461FA4EA73002763FA /* lv9_w8.sks */,
+				DEEA4E471FA4EA73002763FA /* lv9_w9.sks */,
+			);
+			name = level_9;
+			path = levels/level_9;
+			sourceTree = "<group>";
+		};
+		DEFCE9911F0E2BBA00F659A6 /* Bonus Object */ = {
+			isa = PBXGroup;
+			children = (
+				DEFCE9921F0E2BCB00F659A6 /* Coin.swift */,
+				DEC5621B1F07FF3F003267D2 /* Crate.swift */,
+				DEFCE9941F0E40D200F659A6 /* Star.swift */,
+			);
+			name = "Bonus Object";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE1126561E5C92AF009B4D4E /* Magic Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE11266F1E5C92B0009B4D4E /* Build configuration list for PBXNativeTarget "Magic Game" */;
+			buildPhases = (
+				DE1126531E5C92AF009B4D4E /* Sources */,
+				DE1126541E5C92AF009B4D4E /* Frameworks */,
+				DE1126551E5C92AF009B4D4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magic Game";
+			productName = "Zombie Survival";
+			productReference = DE1126571E5C92AF009B4D4E /* Magic Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE11264F1E5C92AF009B4D4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tran Quoc Tuan";
+				TargetAttributes = {
+					DE1126561E5C92AF009B4D4E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J5SY383H2R;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE1126521E5C92AF009B4D4E /* Build configuration list for PBXProject "Magic Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE11264E1E5C92AF009B4D4E;
+			productRefGroup = DE1126581E5C92AF009B4D4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE1126561E5C92AF009B4D4E /* Magic Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE1126551E5C92AF009B4D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8111CB1F650515001AE254 /* lv7_w1.sks in Resources */,
+				DE1126661E5C92AF009B4D4E /* Main.storyboard in Resources */,
+				DE0AE6331F5640E2009CAD58 /* Intro_tutorial_background.mp3 in Resources */,
+				DE5BE7911E792AAE00A30223 /* lv2_w2.sks in Resources */,
+				DE6AE72C1E7C1523007559E4 /* lv4_w2.sks in Resources */,
+				DE10B1D51E98EA5F00BB1137 /* lv5_w4.sks in Resources */,
+				DE5BE7951E792AAE00A30223 /* lv2_w6.sks in Resources */,
+				DE0AE6481F5640E2009CAD58 /* Music_victory.mp3 in Resources */,
+				DE5BE78F1E792AAE00A30223 /* lv2_w1.sks in Resources */,
+				DE6AE71E1E7C1474007559E4 /* BossLv3.atlas in Resources */,
+				DE1126681E5C92AF009B4D4E /* Assets.xcassets in Resources */,
+				DE0AE6441F5640E2009CAD58 /* boss_reading.mp3 in Resources */,
+				DEF049831EA52F420018B7B4 /* Level5_Intro.atlas in Resources */,
+				DE5BE7681E79270600A30223 /* lv3_w10.sks in Resources */,
+				DECE97861F4ACC0500810E89 /* BonusCrateExplotion.sks in Resources */,
+				DE5BE76E1E79270600A30223 /* lv3_w7.sks in Resources */,
+				DE0AE62E1F5640E2009CAD58 /* victory.wav in Resources */,
+				DE6AE72F1E7C1523007559E4 /* lv4_w5.sks in Resources */,
+				DE5BE7931E792AAE00A30223 /* lv2_w4.sks in Resources */,
+				DE07B8D41EA4C91E00966FAB /* Level5_Intro.sks in Resources */,
+				DE0AE62C1F5640E2009CAD58 /* click.wav in Resources */,
+				DE0AE63E1F5640E2009CAD58 /* BossLv5_laugh.wav in Resources */,
+				DE0AE6401F5640E2009CAD58 /* heart.wav in Resources */,
+				DEEA4E4E1FA4EA73002763FA /* lv9_w11.sks in Resources */,
+				DE0AE6311F5640E2009CAD58 /* level_menu_background.mp3 in Resources */,
+				DEEA4E561FA4EA73002763FA /* lv9_w9.sks in Resources */,
+				DEF04A001EAB6A510018B7B4 /* Level1_Intro.atlas in Resources */,
+				DE6AE72A1E7C1523007559E4 /* lv4_w1.sks in Resources */,
+				DE8111CE1F650515001AE254 /* lv7_w3.sks in Resources */,
+				DE87C9A51E820D0A008F36D9 /* BossLv5.atlas in Resources */,
+				DE0AE64E1F5640E2009CAD58 /* spellLeftArrow.wav in Resources */,
+				DE5BE7901E792AAE00A30223 /* lv2_w10.sks in Resources */,
+				DE5BE7871E792AAE00A30223 /* lv1_w2.sks in Resources */,
+				DE10B1D31E98EA5F00BB1137 /* lv5_w2.sks in Resources */,
+				DE3320711F6BA83800B82FF6 /* lv8_w9.sks in Resources */,
+				DE5BE78D1E792AAE00A30223 /* lv1_w8.sks in Resources */,
+				DE0AE64D1F5640E2009CAD58 /* spellHealing.wav in Resources */,
+				DE33206D1F6BA83800B82FF6 /* lv8_w5.sks in Resources */,
+				DE0AE63B1F5640E2009CAD58 /* BossLv4_die.wav in Resources */,
+				DE33206B1F6BA83800B82FF6 /* lv8_w3.sks in Resources */,
+				DE0AE6421F5640E2009CAD58 /* one_enemy_die.wav in Resources */,
+				DE0AE6301F5640E2009CAD58 /* enemy_die.wav in Resources */,
+				DE5BE7881E792AAE00A30223 /* lv1_w3.sks in Resources */,
+				DE52B7AB1E66AC7D008FECDA /* Player.atlas in Resources */,
+				DE0AE63F1F5640E2009CAD58 /* ghost_attack.wav in Resources */,
+				DE5BE78E1E792AAE00A30223 /* lv1_w9.sks in Resources */,
+				DE0AE6471F5640E2009CAD58 /* music.m4a in Resources */,
+				DE5BE76C1E79270600A30223 /* lv3_w5.sks in Resources */,
+				DE0AE6321F5640E2009CAD58 /* main_menu_background.mp3 in Resources */,
+				DE33206C1F6BA83800B82FF6 /* lv8_w4.sks in Resources */,
+				DE5BE78C1E792AAE00A30223 /* lv1_w7.sks in Resources */,
+				DE0AE6411F5640E2009CAD58 /* lighting.wav in Resources */,
+				DE8111D21F650515001AE254 /* lv7_w7.sks in Resources */,
+				DE10B1DA1E98EA5F00BB1137 /* lv5_w9.sks in Resources */,
+				DE0AE62F1F5640E2009CAD58 /* enemy_attack.wav in Resources */,
+				DE6947251EF7C8FC00936B7F /* RacingScene.atlas in Resources */,
+				DE5BE7671E79270600A30223 /* lv3_w1.sks in Resources */,
+				DE0AE64F1F5640E2009CAD58 /* spellRight.wav in Resources */,
+				DEEA4E4B1FA4EA73002763FA /* lv10_w4.sks in Resources */,
+				DE10B1D21E98EA5F00BB1137 /* lv5_w10.sks in Resources */,
+				DEEA4E531FA4EA73002763FA /* lv9_w6.sks in Resources */,
+				DEC5621F1F08246E003267D2 /* HeartExplosion.sks in Resources */,
+				DE10B1D81E98EA5F00BB1137 /* lv5_w7.sks in Resources */,
+				DE5BE7921E792AAE00A30223 /* lv2_w3.sks in Resources */,
+				DE33206E1F6BA83800B82FF6 /* lv8_w6.sks in Resources */,
+				DEEA4E521FA4EA73002763FA /* lv9_w5.sks in Resources */,
+				DE8111CF1F650515001AE254 /* lv7_w4.sks in Resources */,
+				DE5BE7701E79270600A30223 /* lv3_w9.sks in Resources */,
+				DEEA4E4C1FA4EA73002763FA /* lv9_w1.sks in Resources */,
+				DE5BE7861E792AAE00A30223 /* lv1_w1.sks in Resources */,
+				DE5BE78B1E792AAE00A30223 /* lv1_w6.sks in Resources */,
+				DED965E21E8F909F0012BB70 /* Background.atlas in Resources */,
+				DE3320701F6BA83800B82FF6 /* lv8_w7.sks in Resources */,
+				DE0AE6521F5640E2009CAD58 /* Racing_Background.m4a in Resources */,
+				DE5BE7891E792AAE00A30223 /* lv1_w4.sks in Resources */,
+				DE8111D11F650515001AE254 /* lv7_w6.sks in Resources */,
+				DE0AE6351F5640E2009CAD58 /* level_done.wav in Resources */,
+				DEC562231F0827D1003267D2 /* CrateExplosion.sks in Resources */,
+				DEA335921EA13898009B34BD /* lv5_w3.sks in Resources */,
+				DE0AE6341F5640E2009CAD58 /* Level5_Background.wav in Resources */,
+				DE08DE1E1EC85E3400F64A06 /* Level6_Intro.sks in Resources */,
+				DEF049F61EA60DA70018B7B4 /* Level5_Ending.sks in Resources */,
+				DE3320691F6BA83800B82FF6 /* lv8_w11.sks in Resources */,
+				DE6AE7311E7C1523007559E4 /* lv4_w7.sks in Resources */,
+				DE10B1D91E98EA5F00BB1137 /* lv5_w8.sks in Resources */,
+				DE5BE7961E792AAE00A30223 /* lv2_w7.sks in Resources */,
+				DE8111CD1F650515001AE254 /* lv7_w2.sks in Resources */,
+				DE6AE7301E7C1523007559E4 /* lv4_w6.sks in Resources */,
+				DE0AE64B1F5640E2009CAD58 /* spellDown.wav in Resources */,
+				DE10B1D61E98EA5F00BB1137 /* lv5_w5.sks in Resources */,
+				DE1EDB291ED48C38009DBADA /* Tiles.sks in Resources */,
+				DE0AE6361F5640E2009CAD58 /* main_background.mp3 in Resources */,
+				DE2BE8611E66D9DE008C2F1E /* enemies.atlas in Resources */,
+				DE8111D41F650515001AE254 /* lv7_w9.sks in Resources */,
+				DE0AE64C1F5640E2009CAD58 /* spellDownArrow.wav in Resources */,
+				DE5BE7691E79270600A30223 /* lv3_w2.sks in Resources */,
+				DE2D905A1F68E56A003C20CC /* Assets.xcassets in Resources */,
+				DE0AE6511F5640E2009CAD58 /* Background_old.mp3 in Resources */,
+				DE0AE6381F5640E2009CAD58 /* BossLv1_die.wav in Resources */,
+				DEF049F91EA710770018B7B4 /* Level5_End.atlas in Resources */,
+				DE3320681F6BA83800B82FF6 /* lv8_w10.sks in Resources */,
+				DE5BE7971E792AAE00A30223 /* lv2_w8.sks in Resources */,
+				DE5BE76B1E79270600A30223 /* lv3_w4.sks in Resources */,
+				DE1EDB2B1ED48C6F009DBADA /* Object.atlas in Resources */,
+				DE6AE72D1E7C1523007559E4 /* lv4_w3.sks in Resources */,
+				DE10B1D71E98EA5F00BB1137 /* lv5_w6.sks in Resources */,
+				DEEA4E491FA4EA73002763FA /* lv10_w2.sks in Resources */,
+				DEEA4E4D1FA4EA73002763FA /* lv9_w10.sks in Resources */,
+				DEEA4E501FA4EA73002763FA /* lv9_w3.sks in Resources */,
+				DEEA4E4F1FA4EA73002763FA /* lv9_w2.sks in Resources */,
+				DE855A591F76137B00ADCE73 /* lv7_w11.sks in Resources */,
+				DE65423F1E700F25008C04C1 /* BossLv1.atlas in Resources */,
+				DE8111D01F650515001AE254 /* lv7_w5.sks in Resources */,
+				DE0AE6391F5640E2009CAD58 /* BossLv2_die.wav in Resources */,
+				DE0AE62D1F5640E2009CAD58 /* click1.wav in Resources */,
+				DE0AE64A1F5640E2009CAD58 /* Player_win.wav in Resources */,
+				DE3320671F6BA83800B82FF6 /* lv8_w1.sks in Resources */,
+				DE5BE76F1E79270600A30223 /* lv3_w8.sks in Resources */,
+				DE33206F1F6BA83800B82FF6 /* lv8_w8.sks in Resources */,
+				DE10B1FB1E99DD1100BB1137 /* Special_Effects.atlas in Resources */,
+				DEEA4E511FA4EA73002763FA /* lv9_w4.sks in Resources */,
+				DE5BE76A1E79270600A30223 /* lv3_w3.sks in Resources */,
+				DEEA4E4A1FA4EA73002763FA /* lv10_w3.sks in Resources */,
+				DE0AE6491F5640E2009CAD58 /* Player_walk.wav in Resources */,
+				DE5BE76D1E79270600A30223 /* lv3_w6.sks in Resources */,
+				DE1EDB2D1ED48CD8009DBADA /* RacingScene.sks in Resources */,
+				DEEA4E541FA4EA73002763FA /* lv9_w7.sks in Resources */,
+				DEEF9DCB1E7D257F0067A0D1 /* BossLv4.atlas in Resources */,
+				DE0AE6371F5640E2009CAD58 /* boss_attack.wav in Resources */,
+				DE2DEDF51F3C532C00773BAC /* TNTExplosion.sks in Resources */,
+				DE8111CC1F650515001AE254 /* lv7_w10.sks in Resources */,
+				DE0AE63C1F5640E2009CAD58 /* BossLv5_attack.wav in Resources */,
+				DE6AE72E1E7C1523007559E4 /* lv4_w4.sks in Resources */,
+				DE6AE7351E7C1CD5007559E4 /* lv1_w10.sks in Resources */,
+				DEF04A021EAB6A690018B7B4 /* Level1_Intro.sks in Resources */,
+				DE0AE6501F5640E2009CAD58 /* spellUpArrow.wav in Resources */,
+				DE33206A1F6BA83800B82FF6 /* lv8_w2.sks in Resources */,
+				DE0AE63D1F5640E2009CAD58 /* BossLv5_die.wav in Resources */,
+				DE140B0E1EC0DD3E00B99AF0 /* Zombie_3.atlas in Resources */,
+				DE5BE7981E792AAE00A30223 /* lv2_w9.sks in Resources */,
+				DE0AE63A1F5640E2009CAD58 /* BossLv3_die.wav in Resources */,
+				DE08DE211EC87A5200F64A06 /* Level6_Intro.atlas in Resources */,
+				DE8805651E9738F700907387 /* Supporter.atlas in Resources */,
+				DE0AE6451F5640E2009CAD58 /* cat_flying_up.mp3 in Resources */,
+				DE11266B1E5C92AF009B4D4E /* LaunchScreen.storyboard in Resources */,
+				DE12E3A01E76D051006DC59B /* BossLv2.atlas in Resources */,
+				DE8111D31F650515001AE254 /* lv7_w8.sks in Resources */,
+				DEEA4E481FA4EA73002763FA /* lv10_w1.sks in Resources */,
+				DEF2E6C81E8A5F93009E9E68 /* lv1_w11.sks in Resources */,
+				DE15B0681E83D4C4000BF46A /* hud.atlas in Resources */,
+				DE5BE7941E792AAE00A30223 /* lv2_w5.sks in Resources */,
+				DE0AE6461F5640E2009CAD58 /* level1_intro.mp3 in Resources */,
+				DE10B1D11E98EA5F00BB1137 /* lv5_w1.sks in Resources */,
+				DE5BE78A1E792AAE00A30223 /* lv1_w5.sks in Resources */,
+				DEEA4E551FA4EA73002763FA /* lv9_w8.sks in Resources */,
+				DE0D9FE31E8E83230010B598 /* Gesture.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE1126531E5C92AF009B4D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE10B1E01E99000000BB1137 /* SpecialEffects.swift in Sources */,
+				DEC373301EB1E05C00F5DA5D /* SKTAudio.swift in Sources */,
+				DE1126781E5C9523009B4D4E /* Player.swift in Sources */,
+				DE5BE79A1E7A29F700A30223 /* BossLv3.swift in Sources */,
+				DE3A316E1F936A1F0013CD84 /* Sprikeman.swift in Sources */,
+				DE8165061F0205F9001B195D /* PlayerProtocol.swift in Sources */,
+				DEFCE9951F0E40D200F659A6 /* Star.swift in Sources */,
+				DE07B8D61EA4C96F00966FAB /* Level5_Intro.swift in Sources */,
+				DE10B1DE1E98EED200BB1137 /* BossLv5.swift in Sources */,
+				DE1AE8431E632E2E0069960B /* HUD.swift in Sources */,
+				DE1126611E5C92AF009B4D4E /* GameScene.swift in Sources */,
+				DEFCE9931F0E2BCC00F659A6 /* Coin.swift in Sources */,
+				DE09EFD01E94D51600BF99AE /* Supporter.swift in Sources */,
+				DE08DE1F1EC85E3400F64A06 /* Level6_Intro.swift in Sources */,
+				DE138D6F1E686F4F007E3CE8 /* EncounterManager.swift in Sources */,
+				DE11267E1E5C97BE009B4D4E /* DBPathRecognizer.swift in Sources */,
+				DEDE9B371FA197FB001D69D8 /* BossLv9.swift in Sources */,
+				DE86BFDD1F9B400200FC5804 /* SwordsWoman.swift in Sources */,
+				DE6318771F4E58C400A5F64D /* Ork_Captain.swift in Sources */,
+				DEC5621C1F07FF3F003267D2 /* Crate.swift in Sources */,
+				DE33205A1F6BA28200B82FF6 /* Arrow.swift in Sources */,
+				DE6318691F4C160300A5F64D /* Ork.swift in Sources */,
+				DE86BFDF1F9BA58D00FC5804 /* ArcherWoman.swift in Sources */,
+				DEBB21BA1E64241B00451EBE /* Ghost.swift in Sources */,
+				DEB460671E69A69B00530590 /* MenuScene.swift in Sources */,
+				DE63187D1F51786100A5F64D /* BossLv7.swift in Sources */,
+				DEB7B0761E601FC000BECDD9 /* GestureImage.swift in Sources */,
+				DE65423D1E6FA6CD008C04C1 /* BossLv1.swift in Sources */,
+				DE8111D81F67A190001AE254 /* Alien.swift in Sources */,
+				DE65423B1E6EC1D4008C04C1 /* LevelMenu.swift in Sources */,
+				DEEF9DC91E7CFDF40067A0D1 /* BossLv4.swift in Sources */,
+				DE11267B1E5C9563009B4D4E /* Boss.swift in Sources */,
+				DE4375471EB08C6D008BBFDC /* Level1_Intro.swift in Sources */,
+				DEC562261F082A38003267D2 /* ParticalPool.swift in Sources */,
+				DE63187B1F514F0900A5F64D /* MiniBoss.swift in Sources */,
+				DE7497891F8C6855004EBBED /* BossLv8.swift in Sources */,
+				DE12E39E1E76976B006DC59B /* BossLv2.swift in Sources */,
+				DEF049F71EA60DA70018B7B4 /* Level5_Ending.swift in Sources */,
+				DE2D90541F68DE05003C20CC /* Archer.swift in Sources */,
+				DE1126631E5C92AF009B4D4E /* GameViewController.swift in Sources */,
+				DE2D90581F68DE3E003C20CC /* Swordsman.swift in Sources */,
+				DE11265B1E5C92AF009B4D4E /* AppDelegate.swift in Sources */,
+				DE11267F1E5C97BF009B4D4E /* RenderView.swift in Sources */,
+				DE6318751F4C6EFB00A5F64D /* CreepProtocol.swift in Sources */,
+				DE2D90561F68DE15003C20CC /* Witcher.swift in Sources */,
+				DE1126791E5C9523009B4D4E /* Zombie.swift in Sources */,
+				DEAC2D571F6245D5008BE08A /* EnemyProtocol.swift in Sources */,
+				DE8165041F02001A001B195D /* RacingPlayer.swift in Sources */,
+				DE08DE171EC8552B00F64A06 /* RacingScene.swift in Sources */,
+				DE86BFE11F9BAFD900FC5804 /* WomanArrow.swift in Sources */,
+				DE953B4E1F6D3A22005CDAE8 /* RangerProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE1126641E5C92AF009B4D4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE1126651E5C92AF009B4D4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE1126691E5C92AF009B4D4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE11266A1E5C92AF009B4D4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE11266D1E5C92B0009B4D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE11266E1E5C92B0009B4D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE1126701E5C92B0009B4D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J5SY383H2R;
+				INFOPLIST_FILE = "Zombie Survival/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tuan.MagicGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		DE1126711E5C92B0009B4D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J5SY383H2R;
+				INFOPLIST_FILE = "Zombie Survival/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tuan.MagicGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE1126521E5C92AF009B4D4E /* Build configuration list for PBXProject "Magic Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11266D1E5C92B0009B4D4E /* Debug */,
+				DE11266E1E5C92B0009B4D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE11266F1E5C92B0009B4D4E /* Build configuration list for PBXNativeTarget "Magic Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1126701E5C92B0009B4D4E /* Debug */,
+				DE1126711E5C92B0009B4D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE11264F1E5C92AF009B4D4E /* Project object */;
+}
